@@ -1,7 +1,7 @@
 {
   "name": "@sc-components/shared",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "base button solid components",
   "author": "",
   "license": "MIT",
