@@ -1,0 +1,17 @@
+{
+  "name": "@sc-components/shared",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "base button solid components",
+  "author": "",
+  "license": "MIT",
+  "keywords": [],
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "tsup": "^6.5.0"
+  }
+}

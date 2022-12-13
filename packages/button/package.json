@@ -1,0 +1,22 @@
+{
+  "name": "@sc-components/button",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "base button solid components",
+  "author": "",
+  "license": "MIT",
+  "keywords": [],
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.6.4"
+  },
+  "devDependencies": {
+    "@sc-components/shared": "workspace:*",
+    "esbuild-plugin-solid": "^0.4.2",
+    "tsup": "^6.5.0"
+  }
+}
