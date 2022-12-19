@@ -5,17 +5,17 @@ Base avatar component for use in SolidJS applications.
 ## Installation
 
 ```bash
-pnpm install @sc-components/button
+pnpm install @sc-components/avatar
 ```
 
 ## Usage
 
 ```jsx
-import { Button } from '@sc-components/button';
+import { Avatar } from '@sc-components/avatar';
 
 export default function App() {
   return (
-    <Button>Click Me</Button>
+    <Avatar url="https://www.exmaple.com" rounded />
   );
 }
 ```
@@ -24,5 +24,5 @@ export default function App() {
 
 | Prop | Type | Description |
 | --- | --- | --- |
-| `Type` | enum | The button type. |
+| `url` | enum | The button type. |
 | `onClick` | `function` | The function to call when the button is clicked. |

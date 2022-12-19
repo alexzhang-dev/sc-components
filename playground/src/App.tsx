@@ -13,7 +13,7 @@ const App: Component = () => {
   return (
     <>
       <Button type={Type.Primary} onClick={onClick}>222</Button>
-      <Avatar url={url}></Avatar>
+      <Avatar url={url} rounded></Avatar>
     </>
   )
 }
