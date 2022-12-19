@@ -49,7 +49,10 @@ importers:
       vitest: 0.25.8_happy-dom@8.1.0
 
   packages/avatar:
-    specifiers: {}
+    specifiers:
+      '@sc-components/shared': workspace:*
+    devDependencies:
+      '@sc-components/shared': link:../shared
 
   packages/button:
     specifiers:

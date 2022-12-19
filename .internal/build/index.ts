@@ -1,16 +1,16 @@
 // SOLID Build Configure
 import { defineConfig } from 'tsup'
 import { solidPlugin } from 'esbuild-plugin-solid'
-import cssModulePlugin from './moduleCSSPlugin'
+import { cssModulePlugin } from './moduleCSSPlugin'
 
 interface Props {
   cssModule: boolean
 }
 
 export const getBuildConfig = (
-  {
-    cssModule = false,
-  }: Props,
+  { cssModule }: Props = {
+    cssModule: false,
+  }
 ) => {
   const plugins = [
     solidPlugin(),

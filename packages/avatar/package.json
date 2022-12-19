@@ -14,5 +14,7 @@
   "peerDependencies": {
     "solid-js": "^1.6.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@sc-components/shared": "workspace:*"
+  }
 }

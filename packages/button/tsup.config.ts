@@ -1,12 +1,3 @@
-import { defineConfig } from 'tsup'
-import { solidPlugin } from 'esbuild-plugin-solid'
+import { getBuildConfig } from '../../.internal/build'
 
-export default defineConfig({
-  clean: true,
-  entry: ['src/index.tsx'],
-  sourcemap: true,
-  bundle: true,
-  format: ['esm'],
-  dts: true,
-  esbuildPlugins: [solidPlugin()],
-})
+export default getBuildConfig()

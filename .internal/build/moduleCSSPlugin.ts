@@ -6,7 +6,7 @@ import type { Options } from 'tsup'
 
 type ArrayItem<T> = T extends (infer U)[] ? U : never
 
-export default () => ({
+export const cssModulePlugin = () => ({
   name: 'css-module',
   setup(build): void {
     build.onResolve(
