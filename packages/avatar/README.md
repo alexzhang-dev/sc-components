@@ -22,7 +22,15 @@ export default function App() {
 
 ## Acceptable Props
 
-| Prop | Type | Description |
-| --- | --- | --- |
-| `url` | enum | The button type. |
-| `onClick` | `function` | The function to call when the button is clicked. |
+```ts
+interface Props {
+  // avatar url
+  url: string
+  // is rounded
+  rounded?: boolean
+  // other dom attributes (such as class, style, etc.)
+  attr?: JSX.ImgHTMLAttributes<HTMLImageElement>
+  // onClick handler
+  onClick?: () => void
+}
+```
