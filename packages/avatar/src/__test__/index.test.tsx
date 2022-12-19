@@ -1,3 +1,5 @@
+/// <reference types="vitest/globals" />
+
 import { render } from '@solidjs/testing-library'
 import { Avatar } from '..'
 
