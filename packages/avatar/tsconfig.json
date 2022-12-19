@@ -9,5 +9,8 @@
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "noEmit": true
-  }
+  },
+  "include": [
+    "../../typings/*.d.ts"
+  ]
 }
