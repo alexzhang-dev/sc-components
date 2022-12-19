@@ -6,5 +6,6 @@
     "solidjs",
     "taze",
     "tsup"
-  ]
+  ],
+  "references.preferredLocation": "peek"
 }

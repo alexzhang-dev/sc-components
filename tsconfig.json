@@ -7,9 +7,15 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "baseUrl": ".",
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
     "noEmit": true,
     "types": [
-      "vitest/globals"
+      "vitest/globals",
+      "vite/client"
     ]
-  }
+  },
+  "include": [
+    "./.internal/typings/**/*.d.ts"
+  ]
 }

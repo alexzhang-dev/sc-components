@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 import type { Component, JSX } from 'solid-js'
 import css from './index.module.css'
 
