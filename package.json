@@ -2,7 +2,7 @@
   "name": "@sc-components/monorepo",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@7.17.0",
+  "packageManager": "pnpm@7.18.2",
   "license": "MIT",
   "scripts": {
     "up": "taze -r -I major",
@@ -13,13 +13,13 @@
     "@antfu/eslint-config": "^0.34.0",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
-    "eslint": "^8.29.0",
+    "eslint": "^8.30.0",
     "lint-staged": "^13.1.0",
     "simple-git-hooks": "^2.8.1",
-    "solid-js": "^1.6.4",
+    "solid-js": "^1.6.5",
     "taze": "^0.8.4",
     "typescript": "^4.9.4",
-    "vite": "^4.0.1",
+    "vite": "^4.0.2",
     "vite-plugin-solid": "^2.5.0"
   },
   "simple-git-hooks": {
