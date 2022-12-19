@@ -1,6 +1,6 @@
 # Button Component
 
-Base Component for use in SolidJS applications.
+Base button component for use in SolidJS applications.
 
 ## Installation
 
@@ -22,7 +22,20 @@ export default function App() {
 
 ## Acceptable Props
 
-| Prop | Type | Description |
-| --- | --- | --- |
-| `Type` | enum | The button type. |
-| `onClick` | `function` | The function to call when the button is clicked. |
+```ts
+enum Type {
+  Primary = 'primary',
+  Info = 'info',
+  Warn = 'warn',
+  Error = 'error',
+}
+
+interface Props {
+  // button type
+  type?: Type
+  // button children
+  children: JSX.Element
+  // onClick handler
+  onClick?: () => void
+}
+```
