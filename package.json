@@ -14,10 +14,13 @@
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "eslint": "^8.30.0",
+    "esbuild-plugin-solid": "^0.4.2",
     "lint-staged": "^13.1.0",
     "simple-git-hooks": "^2.8.1",
     "solid-js": "^1.6.5",
     "taze": "^0.8.4",
+    "tsup": "^6.5.0",
+    "turbo": "^1.6.3",
     "typescript": "^4.9.4",
     "vite": "^4.0.2",
     "vite-plugin-solid": "^2.5.0"

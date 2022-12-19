@@ -2,16 +2,16 @@
   "name": "@sc-components/shared",
   "type": "module",
   "version": "0.0.1",
-  "description": "base button solid components",
-  "author": "",
+  "description": "utils for sc-components",
+  "author": "alexzhang1030",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "utils"
+  ],
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup"
   },
-  "devDependencies": {
-    "tsup": "^6.5.0"
-  }
+  "devDependencies": {}
 }

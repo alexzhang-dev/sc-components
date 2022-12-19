@@ -1,8 +1,8 @@
 {
-  "name": "@sc-components/button",
+  "name": "@sc-components/avatar",
   "type": "module",
   "version": "0.0.1",
-  "description": "base button solid components",
+  "description": "base avatar solid components",
   "author": "",
   "license": "MIT",
   "keywords": [],
@@ -14,7 +14,5 @@
   "peerDependencies": {
     "solid-js": "^1.6.4"
   },
-  "devDependencies": {
-    "@sc-components/shared": "workspace:*"
-  }
+  "devDependencies": {}
 }
