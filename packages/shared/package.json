@@ -1,7 +1,7 @@
 {
   "name": "@sc-components/shared",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "utils for sc-components",
   "author": "alexzhang1030",
   "license": "MIT",
