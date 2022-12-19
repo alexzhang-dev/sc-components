@@ -8,13 +8,17 @@
     "up": "taze -r -I major",
     "prepare": "simple-git-hooks",
     "play": "pnpm -F play dev",
-    "test": "vitest"
+    "lint": "eslint",
+    "test": "vitest run",
+    "build": "turbo build",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.34.0",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "eslint": "^8.30.0",
+    "bumpp": "^8.2.1",
     "esbuild-plugin-solid": "^0.4.2",
     "@solidjs/testing-library": "^0.5.1",
     "happy-dom": "^8.1.0",

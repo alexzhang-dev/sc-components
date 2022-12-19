@@ -8,6 +8,7 @@
     "solid-js": "^1.6.5"
   },
   "devDependencies": {
+    "@sc-components/avatar": "workspace:*",
     "@sc-components/button": "workspace:*",
     "typescript": "^4.9.4",
     "vite": "^4.0.2",

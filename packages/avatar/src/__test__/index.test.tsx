@@ -28,4 +28,23 @@ describe('Avatar', () => {
     getByRole('img').click()
     expect(onClick).toBeCalledTimes(1)
   })
+  it('acceptable html attribute', () => {
+    const avatar = render(() => <Avatar url="https://example.com" attr={{
+      alt: 'avatar',
+      style: {
+        width: '300px',
+        height: '300px',
+      },
+    }} />)
+    expect(avatar.container).toMatchInlineSnapshot(`
+      <div>
+        <img
+          alt="avatar"
+          class=""
+          src="https://example.com"
+          style="width: 300px; height: 300px;"
+        />
+      </div>
+    `)
+  })
 })
