@@ -1,25 +1,16 @@
-import type { Component, JSX } from 'solid-js'
-import { NOOP } from '@sc-components/shared'
-
-export enum Type {
-  Primary = 'primary',
-  Info = 'info',
-  Warn = 'warn',
-  Error = 'error',
-}
+import type { Component } from 'solid-js'
+import css from './index.module.css'
 
 export interface Props {
-  type?: Type
-  children: JSX.Element
+  url: string
+  rounded?: boolean
   onClick?: () => void
 }
 
-export const Button: Component<Props> = (
-  { type = Type.Primary, children, onClick = NOOP },
+export const Avatar: Component<Props> = (
+  { url, rounded = false, onClick }: Props,
 ) => {
   return (
-    <button data-type={type} onclick={onClick}>
-      {children}
-    </button>
+    <img src={url} class={rounded ? css.rounded : ''} onclick={onClick} />
   )
 }

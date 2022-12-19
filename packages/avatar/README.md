@@ -1,6 +1,6 @@
 # Button Component
 
-Base Component for use in SolidJS applications.
+Base avatar component for use in SolidJS applications.
 
 ## Installation
 
