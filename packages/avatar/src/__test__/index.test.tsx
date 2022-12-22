@@ -5,7 +5,8 @@ import { Avatar } from '..'
 
 describe('Avatar', () => {
   it('render', () => {
-    expect(render(() => <Avatar url="https://example.com" />).container).toMatchInlineSnapshot(`
+    const { container, unmount } = render(() => <Avatar url="https://example.com" />)
+    expect(container).toMatchInlineSnapshot(`
       <div>
         <img
           class=""
@@ -13,9 +14,11 @@ describe('Avatar', () => {
         />
       </div>
     `)
+    unmount()
   })
   it('render rounded', () => {
-    expect(render(() => <Avatar url="https://example.com" rounded></Avatar>).container).toMatchInlineSnapshot(`
+    const { container, unmount } = render(() => <Avatar url="https://example.com" rounded></Avatar>)
+    expect(container).toMatchInlineSnapshot(`
       <div>
         <img
           class="_rounded_82f0a3"
@@ -23,22 +26,24 @@ describe('Avatar', () => {
         />
       </div>
     `)
+    unmount()
   })
   it('should click', () => {
     const onClick = vitest.fn()
-    const { getByRole } = render(() => <Avatar url="https://example.com" onClick={onClick} />)
+    const { getByRole, unmount } = render(() => <Avatar url="https://example.com" onClick={onClick} />)
     getByRole('img').click()
     expect(onClick).toBeCalledTimes(1)
+    unmount()
   })
   it('acceptable html attribute', () => {
-    const avatar = render(() => <Avatar url="https://example.com" attr={{
+    const { container, unmount } = render(() => <Avatar url="https://example.com" attr={{
       alt: 'avatar',
       style: {
         width: '300px',
         height: '300px',
       },
     }} />)
-    expect(avatar.container).toMatchInlineSnapshot(`
+    expect(container).toMatchInlineSnapshot(`
       <div>
         <img
           alt="avatar"
@@ -48,5 +53,6 @@ describe('Avatar', () => {
         />
       </div>
     `)
+    unmount()
   })
 })
