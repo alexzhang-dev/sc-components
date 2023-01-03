@@ -2,7 +2,7 @@
   "name": "@sc-components/monorepo",
   "version": "0.1.2",
   "private": true,
-  "packageManager": "pnpm@7.20.0",
+  "packageManager": "pnpm@7.21.0",
   "license": "MIT",
   "scripts": {
     "up": "taze -r -I major",
@@ -18,10 +18,10 @@
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "@solidjs/testing-library": "^0.5.1",
-    "@types/node": "^18.11.17",
+    "@types/node": "^18.11.18",
     "bumpp": "^8.2.1",
     "esbuild-plugin-solid": "^0.4.2",
-    "eslint": "^8.30.0",
+    "eslint": "^8.31.0",
     "happy-dom": "^8.1.1",
     "lint-staged": "^13.1.0",
     "postcss": "^8.4.20",
@@ -32,9 +32,9 @@
     "tsup": "^6.5.0",
     "turbo": "^1.6.3",
     "typescript": "^4.9.4",
-    "vite": "^4.0.3",
+    "vite": "^4.0.4",
     "vite-plugin-solid": "^2.5.0",
-    "vitest": "^0.26.2"
+    "vitest": "^0.26.3"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged",
