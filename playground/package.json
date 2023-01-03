@@ -11,7 +11,7 @@
     "@sc-components/avatar": "workspace:*",
     "@sc-components/button": "workspace:*",
     "typescript": "^4.9.4",
-    "vite": "^4.0.3",
+    "vite": "^4.0.4",
     "vite-plugin-solid": "^2.5.0"
   }
 }
